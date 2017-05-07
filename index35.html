@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+<!--
+var numChecked=0;
+var cont = new Image(132,24);
+cont.src="images/continue.gif";
+
+var but = new Array(10);
+but[0] = false;
+but[1] = false;
+but[2] = false;
+but[3] = false;
+but[4] = false;
+but[5] = false;
+but[6] = false;
+but[7] = false;
+but[8] = false;
+but[9] = false;
+
+
+
+
+function setCheck(theImage){
+if (but[theImage]==false){
+but[theImage] = true;
+numChecked++;
+if (numChecked==9) document.advance.src="images/continue.gif"
+}
+}
+
+function testChecks(){
+if (numChecked==9)
+window.location="index36.html";
+}
+function changePic(whichpic,theSource){
+document[whichpic].src="images/"+theSource;
+}
+   //-->
+    //]]>
+        </script>
+</head>
+<body >
+The little circles below are radio buttons.  Radio buttons only allow you to choose one option from a group of choices.  Click each of the radio buttons below to continue. (Notice only one will be selected at a time.)
+<br>
+<br>
+<form lpformnum="1">
+<input type="radio" name="sample" onclick="setCheck(1)">one<br>
+<input type="radio" name="sample" onclick="setCheck(2)">two<br>
+<input type="radio" name="sample" onclick="setCheck(3)">three<br>
+<input type="radio" name="sample" onclick="setCheck(4)">four<br>
+<input type="radio" name="sample" onclick="setCheck(5)">five<br>
+<input type="radio" name="sample" onclick="setCheck(6)">six<br>
+<input type="radio" name="sample" onclick="setCheck(7)">seven<br>
+<input type="radio" name="sample" onclick="setCheck(8)">eight<br>
+<input type="radio" name="sample" onclick="setCheck(9)">nine<br>
+</form>
+<p><a href="javascript:testChecks()"><img src="images/spacer.gif" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+
+
+</body>
+</html>
