@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="StyleSheet" href="css/mousing.css" type="text/css">
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+<!--
+var numChecked=0;
+var cont = new Image(132,24);
+cont.src="images/continue.gif";
+
+function setImage(numChecked){
+if (numChecked==5)
+ document.advance.src="images/continue.gif"
+else document.advance.src="images/blank.gif"
+
+}
+
+function testChecks(numChecked){
+if (numChecked==5)
+window.location="index38.html";
+
+}
+
+   //-->
+    //]]>
+        </script>
+</head>
+<body >
+<table width="100%">
+<tbody><tr>
+<td>The skinny white box below is a drop-down menu.  Click the black triangle to its right to open up the menu of options, then click on the "Five" option to continue.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<form name="numberlist">
+Select an option:<br>
+<select name="theChoices" onchange="setImage(this.selectedIndex)">
+<option>choose...</option>
+<option>One</option>
+<option>Two</option>
+<option>Three</option>
+<option>Four</option>
+<option>Five</option>
+<option>Six</option>
+<option>Seven</option>
+<option>Eight</option>
+<option>Nine</option>
+</select>
+<br>
+<br>
+
+<p><a href="javascript:testChecks(document.numberlist.theChoices.selectedIndex)"><img src="images/spacer.gif" width="132" height="24" name="advance" alt="" border="0"></a></p>
+</form>
+</td>
+</tr>
+</tbody></table>
+
+
+
+</body>
+</html>
