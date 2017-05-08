@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="StyleSheet" href="css/mousing.css" type="text/css">
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+<!--
+var numChecked=0;
+var cont = new Image(132,24);
+cont.src="images/continue.gif";
+
+var but = new Array(10);
+but[0] = false;
+but[1] = false;
+but[2] = false;
+but[3] = false;
+but[4] = false;
+but[5] = false;
+but[6] = false;
+but[7] = false;
+but[8] = false;
+but[9] = false;
+
+
+
+
+function setCheck(theImage){
+if (but[theImage]==false){
+but[theImage] = true;
+numChecked++;
+if (numChecked==9) document.advance.src="images/continue.gif"
+}
+}
+
+function testChecks(){
+if (numChecked==9)
+window.location="index34.html";
+}
+function changePic(whichpic,theSource){
+document[whichpic].src="images/"+theSource;
+}
+   //-->
+    //]]>
+        </script>
+</head>
+<body data-gr-c-s-loaded="true">
+The little white boxes below are checkboxes.  Click inside each of the checkboxes to continue.
+<br>
+<br>
+<form lpformnum="1">
+<input type="checkbox" name="sample" onclick="setCheck(1)">One<br>
+<input type="checkbox" name="sample" onclick="setCheck(2)">Two<br>
+<input type="checkbox" name="sample" onclick="setCheck(3)">Three<br>
+<input type="checkbox" name="sample" onclick="setCheck(4)">Four<br>
+<input type="checkbox" name="sample" onclick="setCheck(5)">Five<br>
+<input type="checkbox" name="sample" onclick="setCheck(6)">Six<br>
+<input type="checkbox" name="sample" onclick="setCheck(7)">Seven<br>
+<input type="checkbox" name="sample" onclick="setCheck(8)">Eight<br>
+<input type="checkbox" name="sample" onclick="setCheck(9)">Nine<br>
+</form>
+<p><a href="javascript:testChecks()"><img src="images/spacer.gif" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+
+
+</body>
+</html>
