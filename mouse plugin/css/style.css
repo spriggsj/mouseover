@@ -1,0 +1,16 @@
+.block {
+     color: red;
+    font-weight:bold;
+}
+
+.rotated {
+     color: green;
+    font-weight:bold;
+}
+.hide {
+  display:none;
+}
+
+.show {
+  display:block;
+}
