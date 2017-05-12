@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Page Template Plugin : 'Good To Be Bad'
-Plugin URI: http://www.wpexplorer.com/wordpress-page-templates-plugin/
+Plugin Name: Mouse Plugin : 'Adds Mouse theme_page_templates'
+Plugin URI:
 Version: 1.1.0
-Author: WPExplorer
-Author URI: http://www.wpexplorer.com/
+Author:
+Author URI:
 */
 
 class PageTemplater
