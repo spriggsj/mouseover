@@ -420,103 +420,74 @@
 
   <div id="card22" class="hide" style="padding-top:80px;" >
 
-    <style type="text/css">
-
-  /*body {
-  	overflow:	hidden;
-  	margin:		0;
-  	border:		0;
-  	padding:	20px;
-  	width:		100%;
-  	height:		100%;
-  	background:	rgb(230,230,230);
-  font-family:arial,sans-serif;
-  font-weight:normal;
-  color:black;
-  }*/
-
-  .color-picker {
-  	background:	transparent;
-  	width:120px;
-      position: relative;
-      left: 110px;
-  }
-
-  .color-picker td {
-  	padding:	1px;
-  }
-
-  .dynamic-slider-control {
-  	width:		auto;
-  	height: 200px;
-  	margin:		0;
-  }
-
-  .color-picker input {
-  	text-align:	right;
-  	width:		30px;
-  }
-
-  td    {font-family:arial,sans-serif;
-        color:black;
-  }
-
-  /* need to fix this section pictures are missing in a nothere file*/
 
 
-  </style>
-  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-  .en-markup-crop-options {
-      top: 18px !important;
-      left: 50% !important;
-      margin-left: -100px !important;
-      width: 200px !important;
-      border: 2px rgba(255,255,255,.38) solid !important;
-      border-radius: 4px !important;
-  }
 
-  .en-markup-crop-options div div:first-of-type {
-      margin-left: 0px !important;
-  }
-  </style>
 
-  <div id="canvas" data-gr-c-s-loaded="true" style="background-color: rgb(255, 255, 255);">
-  <table>
+<style type="text/css">
+.rgbbox{
+  background-color: rgb(0,0,0);
+  text-align: center;
+  width: 200px;
 
-  <tbody><tr><td>Click and drag the slider tabs down and up to change the background color of this page.  When you are done, click the 'Continue' link.
-  <br><br>
-  </td>
-  </tr>
-  <tr>
-  <td><table class="color-picker" cellspacing="2" cellpadding="0" border="0">
-  <colgroup><col style="width: 20px">
-  <col style="width: 20px">
-  <col style="width: 20px">
-  </colgroup><tbody><tr>
-  	<td>
-  		<div class="vertical dynamic-slider-control slider" id="red-slider" tabindex="1">
-  			<input class="slider-input" id="red-slider-input">
-  		<div class="line" style="left: 15px; top: 15.5px; height: 167px;"><div style="height: 165px;"></div></div><div class="handle" style="left: 10px; top: 0px;"><div>&nbsp;</div></div></div>
-  	</td>
+   padding: 25px;
+   margin: 25px;
+}
+fieldset{
+  border: none;
+}
+output{
+  display: inline-block;
+  min-width: 2.5em;
+}
+label, output{
+  padding: 2px 9px;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 1.1em;
+}
+label[for=r], output[for=r]{
+  background-color: #f00;
+}
+label[for=g], output[for=g]{
+  background-color: #0f0;
+}
+label[for=b], output[for=b]{
+  background-color: #00f;
+}
+#hex{
+  min-width: 4.5em;
+  font-size: 3em;
+  background: rgba(255,255,255,.3);
+}
 
-  	<td>
-  		<div class="vertical dynamic-slider-control slider" id="green-slider" tabindex="3">
-  			<input class="slider-input" id="green-slider-input">
-  		<div class="line" style="left: 15px; top: 15.5px; height: 167px;"><div style="height: 165px;"></div></div><div class="handle" style="left: 10px; top: 0px;"><div>&nbsp;</div></div></div>
-  	</td>
+</style>
+<div id="demo" class="rgbbox">
+  </div>
 
-  	<td>
-  		<div class="vertical dynamic-slider-control slider" id="blue-slider" tabindex="5">
-  			<input class="slider-input" id="blue-slider-input">
-  		<div class="line" style="left: 15.5px; top: 15.5px; height: 167px;"><div style="height: 165px;"></div></div><div class="handle" style="left: 10.5px; top: 0px;"><div>&nbsp;</div></div></div>
-  	</td>
+      <fieldset>
+      <label for="r">R</label>
+      <input type="range" min="0" max="255" id="r" step="1" value="0">
+      <output for="r" id="r_out">0</output>
+    </fieldset>
 
-  </tr>
-  </tbody></table></td></tr>
-  <tr><td colspan="3"><a href="#" onclick="change()">Continue</a></td></tr>
+    <fieldset>
+      <label for="g">G</label>
+      <input type="range" min="0" max="255" id="g" step="1" value="0">
+      <output for="g" id="g_out">0</output>
+    </fieldset>
 
-  </tbody></table>
+    <fieldset>
+      <label for="b">B</label>
+      <input type="range" min="0" max="255" id="b" step="1" value="0">
+      <output for="b" id="b_out">0</output>
+    </fieldset>
 
+    <output id="hex">#000000</output>
+
+<tr><td colspan="3"><a href="#" onclick="change()">Continue</a></td></tr>
+</div>
 
 
 
@@ -527,56 +498,57 @@
   <script type="text/javascript">
 
   // init code
-  var r = new Slider(document.getElementById("red-slider"), document.getElementById("red-slider-input"),"vertical");
-  r.setMaximum(255);
-  var g = new Slider(document.getElementById("green-slider"), document.getElementById("green-slider-input"),"vertical");
-  g.setMaximum(255);
-  var b = new Slider(document.getElementById("blue-slider"), document.getElementById("blue-slider-input"),"vertical");
-  b.setMaximum(255);
+  var body = document.getElementById("demo"),
+    r = document.querySelector('#r'),
+    g = document.querySelector('#g'),
+    b = document.querySelector('#b'),
+    r_out = document.querySelector('#r_out'),
+    g_out = document.querySelector('#g_out'),
+    b_out = document.querySelector('#b_out'),
+    hex_out = document.querySelector('#hex');
 
+function setColor(){
+  var r_hex = parseInt(r.value, 10).toString(16),
+      g_hex = parseInt(g.value, 10).toString(16),
+      b_hex = parseInt(b.value, 10).toString(16),
+      hex = "#" + pad(r_hex) + pad(g_hex) + pad(b_hex);
+  body.style.backgroundColor = hex;
+  hex_out.value = hex;
+}
 
+function pad(n){
+  return (n.length<2) ? "0"+n : n;
+}
 
-  r.onchange = g.onchange = b.onchange = function () {
-  	var cr = document.getElementById("canvas");
-  	cr.style.backgroundColor = "rgb(" + r.getValue() + "," +
-  								g.getValue() + "," +
-  								b.getValue() + ")";
+r.addEventListener('change', function() {
+  setColor();
+  r_out.value = r.value;
+}, false);
 
+r.addEventListener('input', function() {
+  setColor();
+  r_out.value = r.value;
+}, false);
 
-  	if (typeof window.onchange == "function")
-  		window.onchange();
-  };
+g.addEventListener('change', function() {
+  setColor();
+  g_out.value = g.value;
+}, false);
 
-  r.setValue(255);
-  g.setValue(255);
-  b.setValue(255);
+g.addEventListener('input', function() {
+  setColor();
+  g_out.value = g.value;
+}, false);
 
-  // end init
+b.addEventListener('change', function() {
+  setColor();
+  b_out.value = b.value;
+}, false);
 
-  function setRgb(nRed, nGreen, nBlue) {
-  	r.setValue(nRed);
-  	g.setValue(nGreen);
-  	b.setValue(nBlue);
-  }
-
-  function getRgb() {
-  	return {
-  		r:	r.getValue(),
-  		g:	g.getValue(),
-  		b:	b.getValue()
-  	};
-  }
-
-  function fixSize() {
-  	r.recalculate();
-  	g.recalculate();
-  	b.recalculate();
-  }
-
-  window.onresize = fixSize;
-
-  fixSize();
-
+b.addEventListener('input', function() {
+  setColor();
+  b_out.value = b.value;
+}, false);
 
   </script>
 
@@ -1348,8 +1320,141 @@ And - which is more - you'll be a Man, my son!</p>
 </div>
 
 <div id="card28" class="hide" style="padding-top:80px;" >
-  </div>
+  <script language="JavaScript" type="text/javascript">
+<!--
+function doAlert(){
+var movealong = confirm('Do you want to continue to the next page?')
+if (movealong === true)
+{
+change()
+}else{
+  change()
+}
+}
+//-->
+</script>
 
+<table width="100%">
+<tbody><tr align="left">
+<td><script language="JavaScript" type="text/javascript">
+<!--
+// var theimage="";
+// if (winvista){ theimage="<?php echo plugin_dir_url(__FILE__) . 'images/alertvista.gif'; ?>"}
+// else if (winxp) {theimage="<?php echo plugin_dir_url(__FILE__) . 'images/alertxp.gif'; ?>"}
+// else if (lin){theimage="<?php echo plugin_dir_url(__FILE__) . 'images/alertlinux.gif'; ?>"}
+// else if (mac){theimage="<?php echo plugin_dir_url(__FILE__) . 'images/alertosx.gif'; ?>"}
+// else {theimage="<?php echo plugin_dir_url(__FILE__) . 'images/alert.gif'; ?>"}
+//
+// var thecode='<img src="' + theimage + '" width="425" height="160" align="right" alt="sample alert box" name="mess1" onClick="flashMessage(theimage)" />';
+// document.write(thecode);
+-->
+
+</script><img src="<?php echo plugin_dir_url(__FILE__) . 'images/alertlinux.gif'; ?>" width="425" height="160" align="right" alt="sample alert box" name="mess1" onclick="flashMessage(theimage)">
+Alert boxes are small messages the computer places on the screen to alert you to important information or to ask you questions before carrying out a task.  A sample image of an alert box is shown to the right.
+
+<p>When an alert box appears, you must read the message or question and respond by clicking an appropriate button.</p>
+
+<p>Click the link below to pop up an alert box, then read the message and click the appropriate button in the alert box to continue to the next page.</p>
+<a href="javascript:doAlert()">Click me to pop up an alert box</a>
+</td>
+</tr>
+</tbody></table>
+
+
+  </div>
+<div id="card29" class="hide" style="padding-top:80px;" >
+  stuff
+  <!-- 32-->
+
+  <script type="text/javascript" language="javascript">
+
+var red = new Image (10,10);
+red.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+
+function changeRed(){
+document.c1.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c2.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c3.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c4.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c5.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c6.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c7.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c8.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c9.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c10.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c11.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c12.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c13.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+document.c14.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
+}
+function changeGreen(){
+  <?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>
+document.c1.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c2.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c3.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c4.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c5.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c6.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c7.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c8.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c9.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c10.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c11.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c12.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c13.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+document.c14.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
+}
+</script>
+<table width="100%">
+<tbody><tr>
+<td valign="top" onmousedown="alert('Just move your cursor through the maze.  Do not hold down the mouse button.')">
+Time to practice your mouse movement control.
+Start at the entrance and move your mouse all the way through the maze without touching the green area. (Hint: no clicking, just move the cursor - and the only important part of the cursor to keep within the white path is the tip of the arrow)
+<br>
+<br>
+</td>
+<td align="right">
+<table width="300" height="300" cellspacing="0" cellpadding="0" border="0" onmousedown="alert('Just move your cursor through the maze.  Do not hold down the mouse button.')">
+<tbody><tr><td colspan="5" width="300"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="300" height="20" border="0" name="c1" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr><td width="90"><img src="images/green.gif" width="90" height="20" border="0" name="c2" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td colspan="3" width="190"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
+ width="190" height="20" border="0" alt=""></td>
+"<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" name="c3" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr>
+<td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="150" border="0" name="c4" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
+<td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="150" border="0" name="c5" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt="" name="c6" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+</tr>
+<tr>
+<td width="110" colspan="2" align="left"><img src="images/enter.gif" width="90" height="20" border="0" alt=""></td>
+<td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="20" border="0" name="c7" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c8" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+</tr>
+<tr>
+<td width="260" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="260" height="20" border="0" name="c9" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c10" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+</tr><?php echo plugin_dir_url(__FILE__) . 'images/enter.gif'; ?>
+<tr>
+<td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="20" border="0" name="c11" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="190" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="190" height="20" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c12" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+</tr>
+<tr>
+<td width="90"><img src="images/green.gif" width="90" height="50" border="0" name="c13" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="images/exit.gif" width="20" height="50" border="0" alt=""></td>
+<td width="190" colspan="3"><img src="images/green.gif" width="190" height="50" border="0" alt="" name="c14" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+</tr>
+</tbody></table>
+<br>
+<br>
+<span><a href="#" onclick="change()">Continue</a></span>&nbsp;&nbsp;&nbsp;</td>
+</tr>
+</tbody></table>
+
+  </div>
 
 
 
