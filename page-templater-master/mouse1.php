@@ -1363,7 +1363,7 @@ Alert boxes are small messages the computer places on the screen to alert you to
 
   </div>
 <div id="card29" class="hide" style="padding-top:80px;" >
-  stuff
+
   <!-- 32-->
 
   <script type="text/javascript" language="javascript">
@@ -1388,7 +1388,6 @@ document.c13.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
 document.c14.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
 }
 function changeGreen(){
-  <?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>
 document.c1.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
 document.c2.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
 document.c3.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
@@ -1415,19 +1414,21 @@ Start at the entrance and move your mouse all the way through the maze without t
 </td>
 <td align="right">
 <table width="300" height="300" cellspacing="0" cellpadding="0" border="0" onmousedown="alert('Just move your cursor through the maze.  Do not hold down the mouse button.')">
-<tbody><tr><td colspan="5" width="300"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="300" height="20" border="0" name="c1" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr><td width="90"><img src="images/green.gif" width="90" height="20" border="0" name="c2" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<tbody><tr><td colspan="5" width="300"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="300" height="20" border="0" name="c1" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr>
+  <tr><td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="20" border="0" name="c2" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+
 <td colspan="3" width="190"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
  width="190" height="20" border="0" alt=""></td>
-"<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
+"<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>"
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" name="c3" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr>
 <td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="150" border="0" name="c4" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="150" border="0" alt=""></td>
 <td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="150" border="0" name="c5" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="150" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt="" name="c6" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 </tr>
 <tr>
-<td width="110" colspan="2" align="left"><img src="images/enter.gif" width="90" height="20" border="0" alt=""></td>
+<td width="110" colspan="2" align="left"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/enter.gif'; ?>" width="90" height="20" border="0" alt=""></td>
 <td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="20" border="0" name="c7" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c8" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
@@ -1443,9 +1444,9 @@ Start at the entrance and move your mouse all the way through the maze without t
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c12" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 </tr>
 <tr>
-<td width="90"><img src="images/green.gif" width="90" height="50" border="0" name="c13" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="images/exit.gif" width="20" height="50" border="0" alt=""></td>
-<td width="190" colspan="3"><img src="images/green.gif" width="190" height="50" border="0" alt="" name="c14" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="50" border="0" name="c13" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/exit.gif'; ?>" width="20" height="50" border="0" alt=""></td>
+<td width="190" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="190" height="50" border="0" alt="" name="c14" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 </tr>
 </tbody></table>
 <br>
@@ -1455,6 +1456,547 @@ Start at the entrance and move your mouse all the way through the maze without t
 </tbody></table>
 
   </div>
+
+<div id="card30" class="hide" style="padding-top:80px;" >
+
+  <script type="text/javascript" language="JavaScript">
+      //<![CDATA[
+  <!--
+  var numChecked=0;
+  var cont = new Image(132,24);
+  cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+
+  var but = new Array(10);
+  but[0] = false;
+  but[1] = false;
+  but[2] = false;
+  but[3] = false;
+  but[4] = false;
+  but[5] = false;
+  but[6] = false;
+  but[7] = false;
+  but[8] = false;
+  but[9] = false;
+
+
+
+
+  function setCheck(theImage){
+  if (but[theImage]==false){
+  but[theImage] = true;
+  numChecked++;
+  if (numChecked==9) document.advance.src=" <?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+
+  }
+  }
+
+     //-->
+      //]]>
+          </script>
+  </head>
+  <body data-gr-c-s-loaded="true">
+  The little white boxes below are checkboxes.  Click inside each of the checkboxes to continue.
+  <br>
+  <br>
+  <form lpformnum="1">
+  <input type="checkbox" name="sample" onclick="setCheck(1)">One<br>
+  <input type="checkbox" name="sample" onclick="setCheck(2)">Two<br>
+  <input type="checkbox" name="sample" onclick="setCheck(3)">Three<br>
+  <input type="checkbox" name="sample" onclick="setCheck(4)">Four<br>
+  <input type="checkbox" name="sample" onclick="setCheck(5)">Five<br>
+  <input type="checkbox" name="sample" onclick="setCheck(6)">Six<br>
+  <input type="checkbox" name="sample" onclick="setCheck(7)">Seven<br>
+  <input type="checkbox" name="sample" onclick="setCheck(8)">Eight<br>
+  <input type="checkbox" name="sample" onclick="setCheck(9)">Nine<br>
+  </form>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+<!-- needs work -->
+  </div>
+
+<div id="card31" class="hide" style="padding-top:80px;" >
+  <table width="100%">
+  <tbody><tr>
+  <td>Choose one or more options from the checkboxes below, and then click the 'Continue' button.
+  <br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">Select your desired pizza toppings:</span><br>
+  <input type="checkbox" name="sample">Extra Cheese<br>
+  <input type="checkbox" name="sample">Onions<br>
+  <input type="checkbox" name="sample">Green Peppers<br>
+  <input type="checkbox" name="sample">Anchovies<br>
+  <input type="checkbox" name="sample">Pepperoni<br>
+  <input type="checkbox" name="sample">Sausage<br>
+  <br>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+</div>
+
+<div id="card32" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+<!--
+var numChecked=0;
+var cont = new Image(132,24);
+cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+
+
+var but = new Array(10);
+but[0] = false;
+but[1] = false;
+but[2] = false;
+but[3] = false;
+but[4] = false;
+but[5] = false;
+but[6] = false;
+but[7] = false;
+but[8] = false;
+but[9] = false;
+
+
+
+
+function setCheck(theImage){
+if (but[theImage]==false){
+but[theImage] = true;
+numChecked++;
+if (numChecked==9) document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+
+}
+}
+
+function testChecks(){
+if (numChecked==9)
+change()
+}
+function changePic(whichpic,theSource){
+document[whichpic].src="images/"+theSource;
+}
+   //-->
+    //]]>
+        </script>
+        The little circles below are radio buttons.  Radio buttons only allow you to choose one option from a group of choices.  Click each of the radio buttons below to continue. (Notice only one will be selected at a time.)
+<br>
+<br>
+<form lpformnum="1">
+<input type="radio" name="sample" onclick="setCheck(1)">one<br>
+<input type="radio" name="sample" onclick="setCheck(2)">two<br>
+<input type="radio" name="sample" onclick="setCheck(3)">three<br>
+<input type="radio" name="sample" onclick="setCheck(4)">four<br>
+<input type="radio" name="sample" onclick="setCheck(5)">five<br>
+<input type="radio" name="sample" onclick="setCheck(6)">six<br>
+<input type="radio" name="sample" onclick="setCheck(7)">seven<br>
+<input type="radio" name="sample" onclick="setCheck(8)">eight<br>
+<input type="radio" name="sample" onclick="setCheck(9)">nine<br>
+</form>
+<p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+<!--images/spacer.gif  -->
+
+</div>
+
+<div id="card33" class="hide" style="padding-top:80px;" >
+<table width="100%">
+<tbody><tr>
+<td>Choose an option from the radio buttons below, and then click the 'Continue' button.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<form  class="simpleborder"><br>
+<span class="emph4">What size pizza would you like:</span><br>
+<input type="radio" name="sample">Small<br>
+<input type="radio" name="sample">Medium<br>
+<input type="radio" name="sample">Large<br>
+<input type="radio" name="sample">Extra-large<br>
+<br>
+<p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+</form>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div id="card34" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="JavaScript">
+      //<![CDATA[
+  <!--
+  var numChecked=0;
+  var cont = new Image(132,24);
+  cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+
+  function setImage(numChecked){
+  if (numChecked==5)
+   document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+
+  else document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>"
+
+  }
+
+  function testChecks(numChecked){
+  if (numChecked==5)
+change()
+
+  }
+
+     //-->
+      //]]>
+          </script>
+
+          <table width="100%">
+<tbody><tr>
+<td>The skinny white box below is a drop-down menu.  Click the black triangle to its right to open up the menu of options, then click on the "Five" option to continue.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<form name="numberlist">
+Select an option:<br>
+<select name="theChoices" onchange="setImage(this.selectedIndex)">
+<option>choose...</option>
+<option>One</option>
+<option>Two</option>
+<option>Three</option>
+<option>Four</option>
+<option>Five</option>
+<option>Six</option>
+<option>Seven</option>
+<option>Eight</option>
+<option>Nine</option>
+</select>
+<br>
+<br>
+<p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+</form>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div id="card35" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="JavaScript">
+      //<![CDATA[
+  <!--
+  var numChecked=0;
+  var cont = new Image(132,24);
+  cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+  <?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>
+
+  function setImage(numChecked){
+  if (numChecked==5)
+   document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+  else document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>"
+
+  }
+
+  function testChecks(numChecked){
+  if (numChecked==5)
+  change()
+
+  }
+
+     //-->
+      //]]>
+          </script>
+
+  <table width="100%">
+  <tbody><tr>
+  <td>Select an option from the drop-down menu, then click the 'Continue' button.
+  <br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">Please send my order by:</span><br>
+  <select>
+  <option>Bicycle courier</option>
+  <option>Truck</option>
+  <option>Boat</option>
+  <option>Airmail</option>
+  </select>
+  <br>
+  <br>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+
+
+
+  </div>
+
+  <div id="card36" class="hide" style="padding-top:80px;" >
+
+    <table width="100%">
+    <tbody><tr>
+    <td>The white box below is a scroll menu.  Use the scroll bar on the right side of the menu to scroll through all the available options. Find the "Six" option and click on it to continue.<br>
+    <br>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <form name="numberlist">
+    Choose an option:<br>
+    <select name="theChoices" onchange="setImage(this.selectedIndex)" size="4">
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+    <option>Four</option>
+    <option>Five</option>
+    <option>Six</option>
+    <option>Seven</option>
+    <option>Eight</option>
+    <option>Nine</option>
+    </select>
+    <br>
+    <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+    </form>
+    </td>
+    </tr>
+    </tbody></table>
+
+
+</div>
+
+
+
+
+<div id="card37" class="hide" style="padding-top:80px;" >
+  <table width="100%">
+  <tbody><tr>
+  <td>Use the scroll menu to select an option, then click the 'Continue' button.
+  <br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">Which style of pizza would you like:</span><br>
+  <select size="3">
+  <option>Thin Crust</option>
+  <option>Pan Pizza</option>
+  <option>Deep Dish</option>
+  <option>Chicago Style</option>
+  <option>New York Style</option>
+  <option>Neopolitan</option>
+  <option>Double-layered</option>
+  <option>Triple-layered</option>
+  </select>
+  <br>
+  <br>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+
+</div>
+<div id="card38" class="hide" style="padding-top:80px;" >
+
+
+    First Name: <input type="text" id="fname" value=""><br>
+    Last Name: <input type="text" id="lname" value="">
+
+  <p>Click the button to display the value of the value attribute of the text field.</p>
+      <!-- <p><a href="#" onclick="myFunction(); change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+      var fname = document.getElementById("fname").value;
+      //document.getElementById("demo").innerHTML = fname;
+    var lname = document.getElementById("lname").value;
+    var myName = fname + " " + lname;
+     // document.getElementById("demo").innerHTML = myName;
+    if(myName == ' '){
+      myName="An Unnamed Person";
+    document.getElementById("answer").innerHTML = myName;
+  //document.write(myName);
+    }else{
+       document.getElementById("answer").innerHTML = myName;
+    }
+  }
+  </script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tbody><tr>
+  <td valign="top" align="center"><span class="emph1">Congratulations!</span>  You've reached the end of the mousercise.  That wasn't so difficult, was it?<br><img src="<?php echo plugin_dir_url(__FILE__) . 'images/musclemouse.gif'; ?>" height="128" width="128" alt="This mouse is pumped up!"></td>
+  <td>
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+  <td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate1.jpg'; ?>" width="429" height="126" border="0" alt="certificate of completion"></td>
+  </tr>
+  <tr>
+  <td align="center" valign="middle" class="cert" background="<?php echo plugin_dir_url(__FILE__) . 'images/certificate2.jpg'; ?>" width="429" height="36"><script type="text/javascript" language="javascript">
+      //<![CDATA[
+  <!--
+  // var theName = GetParam('fname') + ' ' + GetParam('lname');
+  // if (theName==' ') theName="An Unnamed Person";
+  // document.write(theName)
+  document.write(myFunction());
+  //myFunction();
+
+      //-->
+      //]]>
+                </script>
+              <div id="answer">
+
+              </div></td>
+  </tr>
+  <tr>
+  <td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate3.jpg'; ?>" width="429" height="151" border="0" alt="certificate of completion"></td>
+  </tr>
+  <tr>
+  <td align="right" class="smaller">
+  <script type="text/javascript" language="javascript">
+      //<![CDATA[
+  <!--
+  var theName2 = "<a target='cert' href='certificate.html?fname=" + GetParam('fname') + "&lname=" + GetParam('lname') + "'>printable version</a>";
+  document.write(theName2)
+
+      //-->
+      //]]>
+                </script>
+
+  </td>
+  </tr>
+  </tbody></table>
+  </td>
+  </tr>
+  </tbody></table>
+
+
+
+
+  <!-- The skinny white boxes below are text boxes.  Click in the first box with your mouse, then type your first name.  Then click inside the second box and type your last name.  When you are done, click the 'Continue' button.
+    <br>
+    <br>
+    <form >
+    <span class="emph1">First Name:</span><input type="text" name="fname"><br>
+    <span class="emph1">Last Name:</span><input type="text" name="lname"><br>
+    <br>
+    <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+    </form>
+
+ -->
+
+</div>
+<!-- <div id="card39" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="Javascript">
+      //<![CDATA[
+  <!--
+  function GetParam(name)
+  {
+    var start=location.search.indexOf("?"+name+"=");
+    if (start<0) start=location.search.indexOf("&"+name+"=");
+    if (start<0) return '';
+    start += name.length+2;
+    var end=location.search.indexOf("&",start)-1;
+    if (end<0) end=location.search.length;
+    var result=location.search.substring(start,end);
+    var result='';
+    for(var i=start;i<=end;i++) {
+      var c=location.search.charAt(i);
+      result=result+(c=='+'?' ':c);
+    }
+    return unescape(result);
+  }
+      -->
+
+      <!-- </script>
+      <table width="100%" border="0" cellspacing="0" cellpadding="10">
+<tbody><tr>
+<td valign="top" align="center"><span class="emph1">Congratulations!</span>  You've reached the end of the mousercise.  That wasn't so difficult, was it?<br><img src="<?php echo plugin_dir_url(__FILE__) . 'images/musclemouse.gif'; ?>" height="128" width="128" alt="This mouse is pumped up!"></td>
+<td><?php echo plugin_dir_url(__FILE__) . 'images/certificate1.jpg'; ?>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate1.jpg'; ?>" width="429" height="126" border="0" alt="certificate of completion"></td>
+</tr>
+<tr>
+<td align="center" valign="middle" class="cert" background="<?php echo plugin_dir_url(__FILE__) . 'images/certificate2.jpg'; ?>" width="429" height="36"><script type="text/javascript" language="javascript"> -->
+    <!-- //<![CDATA[
+<!--
+var theName = GetParam('fname') + ' ' + GetParam('lname');
+if (theName==' ') theName="An Unnamed Person";
+document.write(theName)
+    //-->
+          <!-- </script></td> -->
+<!-- </tr>
+<tr>
+<td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate3.jpg'; ?>" width="429" height="151" border="0" alt="certificate of completion"></td>
+</tr>
+<tr>
+<td align="right" class="smaller"> -->
+<!-- <script type="text/javascript" language="javascript">
+    //<![CDATA[
+<!--
+var theName2 = "<a target='cert' href='certificate.html?fname=" + GetParam('fname') + "&lname=" + GetParam('lname') + "'>printable version</a>";
+document.write(theName2)
+
+
+
+              </script> -->
+
+<!-- </td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<table align="center" cellpadding="10">
+<tbody><tr>
+<td align="center" colspan="2">
+You may either restart the mousercise or to move on to the games page.</td>
+</tr>
+<tr>
+<td align="right">
+<form action="mousercise.html">
+<input type="submit" value="Restart Mousercise">
+</form></td>
+<td align="left">
+<form action="">
+<input type="submit" value="Go to Games Page">
+</form></td>
+</tr>
+</tbody></table>
+
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
