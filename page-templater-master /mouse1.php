@@ -1363,7 +1363,7 @@ Alert boxes are small messages the computer places on the screen to alert you to
 
   </div>
 <div id="card29" class="hide" style="padding-top:80px;" >
-  stuff
+
   <!-- 32-->
 
   <script type="text/javascript" language="javascript">
@@ -1388,7 +1388,6 @@ document.c13.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
 document.c14.src = "<?php echo plugin_dir_url(__FILE__) . 'images/red.gif'; ?>";
 }
 function changeGreen(){
-  <?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>
 document.c1.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
 document.c2.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
 document.c3.src = "<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>";
@@ -1415,19 +1414,44 @@ Start at the entrance and move your mouse all the way through the maze without t
 </td>
 <td align="right">
 <table width="300" height="300" cellspacing="0" cellpadding="0" border="0" onmousedown="alert('Just move your cursor through the maze.  Do not hold down the mouse button.')">
-<tbody><tr><td colspan="5" width="300"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="300" height="20" border="0" name="c1" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr><td width="90"><img src="images/green.gif" width="90" height="20" border="0" name="c2" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td colspan="3" width="190"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
+<tbody>
+  <tr>
+    <td colspan="5" width="300">
+      <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="300" height="20" border="0" name="c1" alt="" onmouseover="changeRed()" onmouseout="changeGreen()">
+    </td>
+  </tr>
+  <tr>
+    <td width="90">
+      <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="20" border="0" name="c2" alt="" onmouseover="changeRed()" onmouseout="changeGreen()">
+    </td>
+
+<td colspan="3" width="190">
+  <img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
  width="190" height="20" border="0" alt=""></td>
-"<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" name="c3" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr>
-<td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="150" border="0" name="c4" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
-<td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="150" border="0" name="c5" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt=""></td>
-<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt="" name="c6" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+
+<td width="20">
+  <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" name="c3" alt="" onmouseover="changeRed()" onmouseout="changeGreen()">
+</td>
 </tr>
 <tr>
-<td width="110" colspan="2" align="left"><img src="images/enter.gif" width="90" height="20" border="0" alt=""></td>
+  <td width="90">
+    <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="150" border="0" name="c4" alt="" onmouseover="changeRed()" onmouseout="changeGreen()">
+  </td>
+  <td width="20">
+    <img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="150" border="0" alt="">
+  </td>
+  <td width="150">
+    <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="150" border="0" name="c5" alt="" onmouseover="changeRed()" onmouseout="changeGreen()">
+  </td>
+  <td width="20">
+    <img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="150" border="0" alt="">
+  </td>
+  <td width="20">
+    <img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="150" border="0" alt="" name="c6" onmouseover="changeRed()" onmouseout="changeGreen()">
+  </td>
+</tr>
+<tr>
+<td width="110" colspan="2" align="left"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/enter.gif'; ?>" width="90" height="20" border="0" alt=""></td>
 <td width="150"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="150" height="20" border="0" name="c7" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c8" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
@@ -1436,16 +1460,16 @@ Start at the entrance and move your mouse all the way through the maze without t
 <td width="260" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="260" height="20" border="0" name="c9" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c10" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-</tr><?php echo plugin_dir_url(__FILE__) . 'images/enter.gif'; ?>
+</tr>
 <tr>
 <td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="20" border="0" name="c11" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="190" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="190" height="20" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c12" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 </tr>
 <tr>
-<td width="90"><img src="images/green.gif" width="90" height="50" border="0" name="c13" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-<td width="20"><img src="images/exit.gif" width="20" height="50" border="0" alt=""></td>
-<td width="190" colspan="3"><img src="images/green.gif" width="190" height="50" border="0" alt="" name="c14" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="50" border="0" name="c13" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
+<td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/exit.gif'; ?>" width="20" height="50" border="0" alt=""></td>
+<td width="190" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="190" height="50" border="0" alt="" name="c14" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 </tr>
 </tbody></table>
 <br>
@@ -1455,6 +1479,650 @@ Start at the entrance and move your mouse all the way through the maze without t
 </tbody></table>
 
   </div>
+
+<div id="card30" class="hide" style="padding-top:80px;" >
+
+
+
+  </head>
+  <body data-gr-c-s-loaded="true">
+  The little white boxes below are checkboxes.  Click inside each of the checkboxes to continue.
+  <br>
+  <br>
+  <!-- <form lpformnum="1">
+  <input type="checkbox" name="sample" onclick="setCheck(1)">One<br>
+  <input type="checkbox" name="sample" onclick="setCheck(2)">Two<br>
+  <input type="checkbox" name="sample" onclick="setCheck(3)">Three<br>
+  <input type="checkbox" name="sample" onclick="setCheck(4)">Four<br>
+  <input type="checkbox" name="sample" onclick="setCheck(5)">Five<br>
+  <input type="checkbox" name="sample" onclick="setCheck(6)">Six<br>
+  <input type="checkbox" name="sample" onclick="setCheck(7)">Seven<br>
+  <input type="checkbox" name="sample" onclick="setCheck(8)">Eight<br>
+  <input type="checkbox" name="sample" onclick="setCheck(9)">Nine<br>
+  </form>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+<!-- needs work -->
+
+<br>
+<br>
+<form lpformnum="1">
+<input type="checkbox" name="clickingAllTheButtions" value="1" onclick="reset_msg();">One<br>
+<input type="checkbox" name="clickingAllTheButtions" value="2" onclick="reset_msg();">Two<br>
+<input type="checkbox" name="clickingAllTheButtions" value="3" onclick="reset_msg();">Three<br>
+<input type="checkbox" name="clickingAllTheButtions" value="4" onclick="reset_msg();">Four<br>
+<input type="checkbox" name="clickingAllTheButtions" value="5" onclick="reset_msg();">Five<br>
+<input type="checkbox" name="clickingAllTheButtions" value="6" onclick="reset_msg();">Six<br>
+<input type="checkbox" name="clickingAllTheButtions" value="7" onclick="reset_msg();">Seven<br>
+<input type="checkbox" name="clickingAllTheButtions" value="8" onclick="reset_msg();">Eight<br>
+<input type="checkbox" name="clickingAllTheButtions" value="9" onclick="reset_msg();">Nine<br>
+<div id="msg1"></div>
+          <input type="submit" value="next" onclick="return sendButtonnumbers();" />
+</form>
+<script type="text/javascript">
+function sendButtonnumbers() {
+     var allbuttonEAS= document.getElementsByName("clickingAllTheButtions");
+     if (allbuttonEAS[0].checked == true && allbuttonEAS[1].checked == true && allbuttonEAS[2].checked == true && allbuttonEAS[3].checked == true && allbuttonEAS[4].checked == true && allbuttonEAS[5].checked == true && allbuttonEAS[6].checked == true && allbuttonEAS[7].checked == true && allbuttonEAS[8].checked == true) {
+       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
+         //alert("Your gender is male");
+          var msg1 = '<span onclick="change();"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"></span><br /><br />';
+          document.getElementById('msg1').innerHTML = msg1;
+         return false;
+     }
+    //  else if (genders[4].checked == true) {
+    //      alert("Your gender is female");
+    //  }
+     else {
+         // no checked
+         var msg = '<span style="color:red;">You must select all boxes 1 - 9</span><br /><br />';
+         document.getElementById('msg1').innerHTML = msg;
+         return false;
+     }
+     return true;
+ }
+
+ function reset_msg() {
+     document.getElementById('msg1').innerHTML = '';
+ }
+</script>
+  </div>
+
+<div id="card31" class="hide" style="padding-top:80px;" >
+
+<script type="text/javascript">
+function sendOrder() {
+             var toping = document.getElementsByName("toppings");
+             if (toping[0].checked == true || toping[1].checked == true || toping[2].checked == true || toping[3].checked == true || toping[4].checked == true || toping[5].checked == true ) {
+                 //alert("Your gender is male");
+               var msg = '<span style="color:black;" herf="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"></span><br /><br />';
+                 document.getElementById('msg').innerHTML = msg;
+                 return false;
+             } else if (genders[4].checked == true) {
+                 alert("Your gender is female");
+             } else {
+                 // no checked
+                 var msg = '<span style="color:red;">You must select your select a topping!</span><br /><br />';
+                 document.getElementById('msg').innerHTML = msg;
+                 return false;
+             }
+             return true;
+         }
+
+         function reset_msg() {
+             document.getElementById('msg').innerHTML = '';
+         }
+</script>
+
+  <table width="100%">
+    <tbody><tr>
+    <td>Choose one or more options from the checkboxes below, and then click the 'Continue' button.
+    <br>
+    <br>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </form>
+  <form lpformnum="1">
+  <input type="checkbox" name="toping" value="1" onclick="reset_msg();">Extra Cheese<br>
+  <input type="checkbox" name="toping" value="2" onclick="reset_msg();">Onions<br>
+  <input type="checkbox" name="toping" value="3" onclick="reset_msg();">Green Peppers<br>
+  <input type="checkbox" name="toping" value="4" onclick="reset_msg();">Anchovies<br>
+  <input type="checkbox" name="toping" value="5" onclick="reset_msg();">Pepperoni<br>
+  <input type="checkbox" name="toping" value="6" onclick="reset_msg();">Sausage<br>
+
+  <div id="msg2"></div>
+            <input type="submit" value="next" onclick="return sendOrder();" />
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+  </td>
+  </tr>
+  </tbody></table>
+
+
+
+<script type="text/javascript">
+function sendOrder() {
+             var toping = document.getElementsByName("toping");
+             if (toping[0].checked == true || toping[1].checked == true || toping[2].checked == true || toping[3].checked == true || toping[4].checked == true || toping[5].checked == true ) {
+                 //alert("Your gender is male");
+               var msg2 = '<span style="color:black;" herf="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"></span><br /><br />';
+                 document.getElementById('msg2').innerHTML = msg2;
+                 return false;
+              }else {
+                 // no checked
+                 var msg = '<span style="color:red;">You must select your select a topping!</span><br /><br />';
+                 document.getElementById('msg2').innerHTML = msg;
+                 return false;
+             }
+             return true;
+
+       }
+
+         function reset_msg2() {
+             document.getElementById('msg2').innerHTML = '';
+         }
+
+</script>
+
+
+</div>
+
+<div id="card32" class="hide" style="padding-top:80px;" >
+
+
+
+  <!-- <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+<!--
+var numChecked=0;
+var cont = new Image(132,24);
+cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+
+
+var but = new Array(10);
+but[0] = false;
+but[1] = false;
+but[2] = false;
+but[3] = false;
+but[4] = false;
+but[5] = false;
+but[6] = false;
+but[7] = false;
+but[8] = false;
+but[9] = false;
+
+
+
+
+function setCheck(theImage){
+if (but[theImage]==false){
+but[theImage] = true;
+numChecked++;
+if (numChecked==9) document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+
+}
+}
+//
+var setCheck = function(){
+
+}
+
+function testChecks(){
+if (numChecked==9)
+change()
+}
+function changePic(whichpic,theSource){
+document[whichpic].src="images/"+theSource;
+}
+   //-->
+<script type="text/javascript">
+
+
+   function sendrButtonnumbers() {
+          var allrbuttonEAS= document.getElementsByName("clickingAllTheradionButtions");
+          if (allrbuttonEAS[0].checked == true || allrbuttonEAS[1].checked == true || allrbuttonEAS[2].checked == true || allrbuttonEAS[3].checked == true || allrbuttonEAS[4].checked == true || allrbuttonEAS[5].checked == true || allrbuttonEAS[6].checked == true || allrbuttonEAS[7].checked == true || allrbuttonEAS[8].checked == true) {
+            //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
+              //alert("Your gender is male");
+               var msg3 = '<span onclick="change();"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"></span><br /><br />';
+               document.getElementById('msg3').innerHTML = msg3;
+              return false;
+          }
+         //  else if (genders[4].checked == true) {
+         //      alert("Your gender is female");
+         //  }
+          else {
+              // no checked
+              var msg3 = '<span style="color:red;">You must select one box</span><br /><br />';
+              document.getElementById('msg3').innerHTML = msg3;
+              return false;
+          }
+          return true;
+      }
+
+      function reset_msg() {
+          document.getElementById('msg3').innerHTML = '';
+      }
+
+        </script>
+        <!-- The little circles below are radio buttons.  Radio buttons only allow you to choose one option from a group of choices.  Click each of the radio buttons below to continue. (Notice only one will be selected at a time.)
+<br>
+<br>
+<form lpformnum="1">
+<input type="radio" name="sample" onclick="setCheck(1)">one<br>
+<input type="radio" name="sample" onclick="setCheck(2)">two<br>
+<input type="radio" name="sample" onclick="setCheck(3)">three<br>
+<input type="radio" name="sample" onclick="setCheck(4)">four<br>
+<input type="radio" name="sample" onclick="setCheck(5)">five<br>
+<input type="radio" name="sample" onclick="setCheck(6)">six<br>
+<input type="radio" name="sample" onclick="setCheck(7)">seven<br>
+<input type="radio" name="sample" onclick="setCheck(8)">eight<br>
+<input type="radio" name="sample" onclick="setCheck(9)">nine<br>
+</form>
+<p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+<!--images/spacer.gif  -->
+The little circles below are radio buttons.  Radio buttons only allow you to choose one option from a group of choices.  Click each of the radio buttons below to continue. (Notice only one will be selected at a time.)
+<br>
+<br>
+<form lpformnum="1">
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">one<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">two<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">three<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">four<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">five<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">six<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">seven<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">eight<br>
+<input type="radio" name="clickingAllTheradionButtions" value="1" onclick="reset_msg();">nine<br>
+</form>
+<div id="msg3"></div>
+        <input type="submit" value="next" onclick="return sendrButtonnumbers();" />
+</div>
+
+<div id="card33" class="hide" style="padding-top:80px;" >
+
+  <script type="text/javascript">
+function sendROrderButtonnumbers() {
+     var allrbuttonEAS= document.getElementsByName("clickingorderoTheradionButtions");
+     if (allrbuttonEAS[0].checked == true || allrbuttonEAS[1].checked == true || allrbuttonEAS[2].checked == true || allrbuttonEAS[3].checked == true ) {
+       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
+         //alert("Your gender is male");
+          var msg4 = '<span onclick="change();">continue</span><br /><br />';
+          document.getElementById('msg4').innerHTML = msg4;
+         return false;
+     }
+    //  else if (genders[4].checked == true) {
+    //      alert("Your gender is female");
+    //  }
+     else {
+         // no checked
+         var msg4 = '<span style="color:red;">You must select one box</span><br /><br />';
+         document.getElementById('msg4').innerHTML = msg4;
+         return false;
+
+     }
+     return true;
+ }
+
+ function reset_msg() {
+     document.getElementById('msg4').innerHTML = '';
+ }
+</script>
+
+<table width="100%">
+<tbody><tr>
+<td>Choose an option from the radio buttons below, and then click the 'Continue' button.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">What size pizza would you like:</span><br>
+  <input type="radio" name="clickingorderoTheradionButtions" value="1" onclick="reset_msg();">Small<br>
+  <input type="radio" name="clickingorderoTheradionButtions" value="1" onclick="reset_msg();">Medium<br>
+  <input type="radio" name="clickingorderoTheradionButtions" value="1" onclick="reset_msg();">Large<br>
+  <input type="radio" name="clickingorderoTheradionButtions" value="1" onclick="reset_msg();">Extra-large<br>
+  <br>
+  <div id="msg4"></div>
+            <input type="submit" value="next" onclick="return sendROrderButtonnumbers();" />
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<div id="card34" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="JavaScript">
+
+function sendpicked5() {
+     var allrbuttonEAS= document.getElementsByName("clickingdropdown");
+     if (allrbuttonEAS[].checked == true || allrbuttonEAS[1].checked == true || allrbuttonEAS[2].checked == true || allrbuttonEAS[3].checked == true || allrbuttonEAS[4].checked == true || allrbuttonEAS[5].checked == true || allrbuttonEAS[6].checked == true || allrbuttonEAS[7].checked == true || allrbuttonEAS[8].checked == true ) {
+       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
+
+          var msg5 = '<span onclick="change();">continue</span><br /><br />';
+          document.getElementById('msg5').innerHTML = msg5;
+         return false;
+      }
+
+    else {
+         // no checked
+         var msg5 = '<span style="color:red;">You must select one box</span><br /><br />';
+         document.getElementById('msg5').innerHTML = msg5;
+         return false;
+
+     }
+     return true;
+ }
+
+ function reset_msg() {
+     document.getElementById('msg4').innerHTML = '';
+ }
+
+     //-->
+      //]]>
+          </script>
+
+          <table width="100%">
+
+<tbody><tr>
+<td>The skinny white box below is a drop-down menu.  Click the black triangle to its right to open up the menu of options, then click on the "Five" option to continue.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<form name="numberlist">
+Select an option:<br>
+<select name="theChoices" >
+<option>choose...</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">One</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Two</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Three</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Four</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Five</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Six</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Seven</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Eight</option>
+<option name="clickingdropdown" value="1" onclick="sendpicked5()">Nine</option>
+</select>
+<br>
+<br>
+<!-- <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+<div id="msg5"></div>
+<input type="submit" value="next" onclick="return sendpicked5();" />
+</form>
+</td>
+</tr>
+</tbody></table>
+
+<!-- <tbody><tr>
+<td>The skinny white box below is a drop-down menu.  Click the black triangle to its right to open up the menu of options, then click on the "Five" option to continue.
+<br>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+<form name="numberlist">
+Select an option:<br>
+<select name="theChoices" onchange="setImage(this.selectedIndex)">
+<option>choose...</option>
+<option>One</option>
+<option>Two</option>
+<option>Three</option>
+<option>Four</option>
+<option>Five</option>
+<option>Six</option>
+<option>Seven</option>
+<option>Eight</option>
+<option>Nine</option>
+</select>
+<br>
+<br>
+<p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+</form>
+</td>
+</tr>
+</tbody></table> -->
+
+
+</div>
+
+<div id="card35" class="hide" style="padding-top:80px;" >
+  <script type="text/javascript" language="JavaScript">
+      //<![CDATA[
+  <!--
+  // var numChecked=0;
+  // var cont = new Image(132,24);
+  // cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
+  // <?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>
+  //
+  // function setImage(numChecked){
+  // if (numChecked==5)
+  //  document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
+  // else document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>"
+  //
+  // }
+  //
+  // function testChecks(numChecked){
+  // if (numChecked==5)
+  // change()
+  //
+  // }
+  //
+  //    //-->
+  //     //]]>
+
+  <script type="text/javascript">
+function sendpicked5() {
+     var allrbuttonEAS= document.getElementsByName("clickingdropdown");
+     if (allrbuttonEAS[0].checked == true ) {
+       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
+         //alert("Your gender is male");
+          var msg5 = '<span onclick="change();">continue</span><br /><br />';
+          document.getElementById('msg5').innerHTML = msg5;
+         return false;
+      }
+    }
+          </script>
+
+  <table width="100%">
+  <tbody><tr>
+  <td>Select an option from the drop-down menu, then click the 'Continue' button.
+  <br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">Please send my order by:</span><br>
+  <select>
+  <option>Bicycle courier</option>
+  <option>Truck</option>
+  <option>Boat</option>
+  <option>Airmail</option>
+  </select>
+  <br>
+  <br>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+
+
+
+  </div>
+
+  <div id="card36" class="hide" style="padding-top:80px;" >
+
+    <table width="100%">
+    <tbody><tr>
+    <td>The white box below is a scroll menu.  Use the scroll bar on the right side of the menu to scroll through all the available options. Find the "Six" option and click on it to continue.<br>
+    <br>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <form name="numberlist">
+    Choose an option:<br>
+    <select name="theChoices" onchange="setImage(this.selectedIndex)" size="4">
+    <option>One</option>
+    <option>Two</option>
+    <option>Three</option>
+    <option>Four</option>
+    <option>Five</option>
+    <option>Six</option>
+    <option>Seven</option>
+    <option>Eight</option>
+    <option>Nine</option>
+    </select>
+    <br>
+    <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+    </form>
+    </td>
+    </tr>
+    </tbody></table>
+
+
+</div>
+
+
+
+
+<div id="card37" class="hide" style="padding-top:80px;" >
+  <table width="100%">
+  <tbody><tr>
+  <td>Use the scroll menu to select an option, then click the 'Continue' button.
+  <br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form  class="simpleborder"><br>
+  <span class="emph4">Which style of pizza would you like:</span><br>
+  <select size="3">
+  <option>Thin Crust</option>
+  <option>Pan Pizza</option>
+  <option>Deep Dish</option>
+  <option>Chicago Style</option>
+  <option>New York Style</option>
+  <option>Neopolitan</option>
+  <option>Double-layered</option>
+  <option>Triple-layered</option>
+  </select>
+  <br>
+  <br>
+  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
+
+</div>
+<div id="card38" class="hide" style="padding-top:80px;" >
+
+
+    First Name: <input type="text" id="fname" value=""><br>
+    Last Name: <input type="text" id="lname" value="">
+
+  <p>Click the button to display the value of the value attribute of the text field.</p>
+      <!-- <p><a href="#" onclick="myFunction(); change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+
+  <script>
+  function myFunction() {
+      var fname = document.getElementById("fname").value;
+      //document.getElementById("demo").innerHTML = fname;
+    var lname = document.getElementById("lname").value;
+    var myName = fname + " " + lname;
+     // document.getElementById("demo").innerHTML = myName;
+    if(myName == ' '){
+      myName="An Unnamed Person";
+    document.getElementById("answer").innerHTML = myName;
+  //document.write(myName);
+    }else{
+       document.getElementById("answer").innerHTML = myName;
+    }
+  }
+  </script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="10">
+  <tbody><tr>
+  <td valign="top" align="center"><span class="emph1">Congratulations!</span>  You've reached the end of the mousercise.  That wasn't so difficult, was it?<br><img src="<?php echo plugin_dir_url(__FILE__) . 'images/musclemouse.gif'; ?>" height="128" width="128" alt="This mouse is pumped up!"></td>
+  <td>
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+  <td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate1.jpg'; ?>" width="429" height="126" border="0" alt="certificate of completion"></td>
+  </tr>
+  <tr>
+  <td align="center" valign="middle" class="cert" background="<?php echo plugin_dir_url(__FILE__) . 'images/certificate2.jpg'; ?>" width="429" height="36"><script type="text/javascript" language="javascript">
+      //<![CDATA[
+  <!--
+  // var theName = GetParam('fname') + ' ' + GetParam('lname');
+  // if (theName==' ') theName="An Unnamed Person";
+  // document.write(theName)
+  //document.write(myFunction());
+  //myFunction();
+
+      //-->
+      //]]>
+                </script>
+              <div id="answer">
+
+              </div></td>
+  </tr>
+  <tr>
+  <td><img src="<?php echo plugin_dir_url(__FILE__) . 'images/certificate3.jpg'; ?>" width="429" height="151" border="0" alt="certificate of completion"></td>
+  </tr>
+  <tr>
+  <td align="right" class="smaller">
+  <script type="text/javascript" language="javascript">
+      //<![CDATA[
+  <!--
+  // var theName2 = "<a target='cert' href='certificate.html?fname=" + GetParam('fname') + "&lname=" + GetParam('lname') + "'>printable version</a>";
+  // document.write(theName2)
+
+      //-->
+      //]]>
+                </script>
+
+  </td>
+  </tr>
+  </tbody></table>
+  </td>
+  </tr>
+  </tbody></table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

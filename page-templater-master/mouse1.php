@@ -1419,7 +1419,7 @@ Start at the entrance and move your mouse all the way through the maze without t
 
 <td colspan="3" width="190"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>"
  width="190" height="20" border="0" alt=""></td>
-"<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>"
+
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" name="c3" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td></tr><tr>
 <td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="150" border="0" name="c4" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="150" border="0" alt=""></td>
@@ -1437,7 +1437,7 @@ Start at the entrance and move your mouse all the way through the maze without t
 <td width="260" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="260" height="20" border="0" name="c9" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="20" height="20" border="0" alt=""></td>
 <td width="20"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="20" height="20" border="0" alt="" name="c10" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
-</tr><?php echo plugin_dir_url(__FILE__) . 'images/enter.gif'; ?>
+</tr>
 <tr>
 <td width="90"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/green.gif'; ?>" width="90" height="20" border="0" name="c11" alt="" onmouseover="changeRed()" onmouseout="changeGreen()"></td>
 <td width="190" colspan="3"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/spacer.gif'; ?>" width="190" height="20" border="0" alt=""></td>
