@@ -420,7 +420,7 @@
 
   <div id="card22" class="hide" style="padding-top:80px;" >
 
-
+use the scroll bars to change to color of the box
 
 
 
@@ -1748,7 +1748,7 @@ function sendROrderButtonnumbers() {
      if (allrbuttonEAS[0].checked == true || allrbuttonEAS[1].checked == true || allrbuttonEAS[2].checked == true || allrbuttonEAS[3].checked == true ) {
        //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
          //alert("Your gender is male");
-          var msg4 = '<span onclick="change();">continue</span><br /><br />';
+          var msg4 = '<span onclick="change();"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"></span><br /><br />';
           document.getElementById('msg4').innerHTML = msg4;
          return false;
      }
@@ -1795,33 +1795,20 @@ function sendROrderButtonnumbers() {
 
 <div id="card34" class="hide" style="padding-top:80px;" >
   <script type="text/javascript" language="JavaScript">
+  function changeddl($this)
+  {
+      if($this.value=="answer")
+      {
 
-function sendpicked5() {
-     var allrbuttonEAS= document.getElementsByName("clickingdropdown");
-     if (allrbuttonEAS[].checked == true || allrbuttonEAS[1].checked == true || allrbuttonEAS[2].checked == true || allrbuttonEAS[3].checked == true || allrbuttonEAS[4].checked == true || allrbuttonEAS[5].checked == true || allrbuttonEAS[6].checked == true || allrbuttonEAS[7].checked == true || allrbuttonEAS[8].checked == true ) {
-       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
 
-          var msg5 = '<span onclick="change();">continue</span><br /><br />';
-          document.getElementById('msg5').innerHTML = msg5;
-         return false;
+          change();
+
+
+
+
       }
+  }
 
-    else {
-         // no checked
-         var msg5 = '<span style="color:red;">You must select one box</span><br /><br />';
-         document.getElementById('msg5').innerHTML = msg5;
-         return false;
-
-     }
-     return true;
- }
-
- function reset_msg() {
-     document.getElementById('msg4').innerHTML = '';
- }
-
-     //-->
-      //]]>
           </script>
 
           <table width="100%">
@@ -1834,7 +1821,27 @@ function sendpicked5() {
 </tr>
 <tr>
 <td>
-<form name="numberlist">
+
+  <form name="numberlist">
+  Select an option:<br>
+  <select name="theChoices" onchange="changeddl(this)">
+  <option>choose...</option>
+  <option value="answer">One</option>
+  <option value="answer">Two</option>
+  <option value="answer">Three</option>
+  <option value="answer">Four</option>
+  <option value="answer">Five</option>
+  <option value="answer">Six</option>
+  <option value="answer">Seven</option>
+  <option value="answer">Eight</option>
+  <option value="answer">Nine</option>
+  </select>
+
+
+
+  </form>
+
+<!-- <form name="numberlist">
 Select an option:<br>
 <select name="theChoices" >
 <option>choose...</option>
@@ -1850,10 +1857,10 @@ Select an option:<br>
 </select>
 <br>
 <br>
-<!-- <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
+ <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
 <div id="msg5"></div>
 <input type="submit" value="next" onclick="return sendpicked5();" />
-</form>
+</form> -->
 </td>
 </tr>
 </tbody></table>
@@ -1894,67 +1901,37 @@ Select an option:<br>
 
 <div id="card35" class="hide" style="padding-top:80px;" >
   <script type="text/javascript" language="JavaScript">
-      //<![CDATA[
-  <!--
-  // var numChecked=0;
-  // var cont = new Image(132,24);
-  // cont.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>";
-  // <?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>
-  //
-  // function setImage(numChecked){
-  // if (numChecked==5)
-  //  document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>"
-  // else document.advance.src="<?php echo plugin_dir_url(__FILE__) . 'images/blank.gif'; ?>"
-  //
-  // }
-  //
-  // function testChecks(numChecked){
-  // if (numChecked==5)
-  // change()
-  //
-  // }
-  //
-  //    //-->
-  //     //]]>
 
-  <script type="text/javascript">
-function sendpicked5() {
-     var allrbuttonEAS= document.getElementsByName("clickingdropdown");
-     if (allrbuttonEAS[0].checked == true ) {
-       //(buttonnumbers[0].checked == true && buttonnumbers[1].checked == true && buttonnumbers[2].checked == true && buttonnumbers[3].checked == true && buttonnumbers[4].checked == true && buttonnumbers[5].checked == true && buttonnumbers[6].checked == true && buttonnumbers[7].checked == true && buttonnumbers[8].checked == true )
-         //alert("Your gender is male");
-          var msg5 = '<span onclick="change();">continue</span><br /><br />';
-          document.getElementById('msg5').innerHTML = msg5;
-         return false;
-      }
-    }
+
+
           </script>
 
-  <table width="100%">
-  <tbody><tr>
-  <td>Select an option from the drop-down menu, then click the 'Continue' button.
-  <br>
-  <br>
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <form  class="simpleborder"><br>
-  <span class="emph4">Please send my order by:</span><br>
-  <select>
-  <option>Bicycle courier</option>
-  <option>Truck</option>
-  <option>Boat</option>
-  <option>Airmail</option>
-  </select>
-  <br>
-  <br>
-  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+          <table width="100%">
+        <tbody><tr>
+        <td>Select an option from the drop-down menu.
+        <br>
+        <br>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <form  class="simpleborder"><br>
+        <span class="emph4">Please send my order by:</span><br>
+        <select onchange="changeddl(this)">
+        <option>choose..</option>
+        <option value="answer">Bicycle courier</option>
+        <option value="answer">Truck</option>
+        <option value="answer">Boat</option>
+        <option value="answer">Airmail</option>
+        </select>
+        <br>
+        <br>
+        <!-- <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
 
-  </form>
-  </td>
-  </tr>
-  </tbody></table>
+        </form>
+        </td>
+        </tr>
+        </tbody></table>
 
 
 
@@ -1964,32 +1941,32 @@ function sendpicked5() {
 
     <table width="100%">
     <tbody><tr>
-    <td>The white box below is a scroll menu.  Use the scroll bar on the right side of the menu to scroll through all the available options. Find the "Six" option and click on it to continue.<br>
-    <br>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <form name="numberlist">
-    Choose an option:<br>
-    <select name="theChoices" onchange="setImage(this.selectedIndex)" size="4">
-    <option>One</option>
-    <option>Two</option>
-    <option>Three</option>
-    <option>Four</option>
-    <option>Five</option>
-    <option>Six</option>
-    <option>Seven</option>
-    <option>Eight</option>
-    <option>Nine</option>
-    </select>
-    <br>
-    <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+  <td>The white box below is a scroll menu.  Use the scroll bar on the right side of the menu to scroll through all the available options. Find the "Six" option and click on it to continue.<br>
+  <br>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <form name="numberlist">
+  Choose an option:<br>
+  <select name="theChoices" onchange="changeddl(this)" size="4">
+  <option>One</option>
+  <option>Two</option>
+  <option>Three</option>
+  <option>Four</option>
+  <option>Five</option>
+  <option value="answer">Six</option>
+  <option>Seven</option>
+  <option>Eight</option>
+  <option>Nine</option>
+  </select>
+  <br>
 
-    </form>
-    </td>
-    </tr>
-    </tbody></table>
+
+  </form>
+  </td>
+  </tr>
+  </tbody></table>
 
 
 </div>
@@ -1999,34 +1976,34 @@ function sendpicked5() {
 
 <div id="card37" class="hide" style="padding-top:80px;" >
   <table width="100%">
-  <tbody><tr>
-  <td>Use the scroll menu to select an option, then click the 'Continue' button.
-  <br>
-  <br>
-  </td>
-  </tr>
-  <tr>
-  <td>
-  <form  class="simpleborder"><br>
-  <span class="emph4">Which style of pizza would you like:</span><br>
-  <select size="3">
-  <option>Thin Crust</option>
-  <option>Pan Pizza</option>
-  <option>Deep Dish</option>
-  <option>Chicago Style</option>
-  <option>New York Style</option>
-  <option>Neopolitan</option>
-  <option>Double-layered</option>
-  <option>Triple-layered</option>
-  </select>
-  <br>
-  <br>
-  <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p>
+    <tbody><tr>
+      <td>Use the scroll menu to select an option, then click the style you want.
+      <br>
+      <br>
+      </td>
+      </tr>
+      <tr>
+      <td>
+      <form  class="simpleborder"><br>
+      <span class="emph4">Which style of pizza would you like:</span><br>
+      <select name="theChoices" onchange="changeddl(this)" size="3">
+      <option value="answer">Thin Crust</option>
+      <option value="answer">Pan Pizza</option>
+      <option value="answer">Deep Dish</option>
+      <option value="answer">Chicago Style</option>
+      <option value="answer">New York Style</option>
+      <option value="answer">Neopolitan</option>
+      <option value="answer">Double-layered</option>
+      <option value="answer">Triple-layered</option>
+      </select>
+      <br>
+      <br>
+      <!-- <p><a href="#" onclick="change()"><img src="<?php echo plugin_dir_url(__FILE__) . 'images/continue.gif'; ?>" width="132" height="24" name="advance" alt="" border="0"></a></p> -->
 
-  </form>
-  </td>
-  </tr>
-  </tbody></table>
+      </form>
+      </td>
+      </tr>
+      </tbody></table>
 
 </div>
 <div id="card38" class="hide" style="padding-top:80px;" >
